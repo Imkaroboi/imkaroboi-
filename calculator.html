@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stuff Im learning in javascript.</title>
+</head>
+<body>
+<!--html here-->
+<input type="text" name="textbox" id="textbox" value="">
+<button onclick="magic()">click me</button>
+<p id=result></p>
+    <script>
+function magic() {
+    var textbox = document.getElementById("textbox");
+    document.getElementById("result").innerHTML = textbox.value;
+}
+    </script>
+
+</body>
+</html>

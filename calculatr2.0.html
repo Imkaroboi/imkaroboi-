@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <br>
+   <h4>Addition</h4>
+    <input type="number" id="varOne" value="">
+    <input type="number" id="varTwo" value="">
+    <button id="addition" onclick="doj
+    ub()">Click to add</button>
+    <p id="hi"></p>
+<br>
+<h4>Subtraction</h4>
+<input type="number" id="dos" value="">
+    <input type="number" id="des" value="">
+    <button id="subtraction" onclick="dob()">Click to add</button>
+    <p id="ho"></p>
+    <br>
+    <h4>Multiplication</h4>
+    <input type="number" id="dis" value="">
+    <input type="number" id="dus" value="">
+    <button id="Multiplication" onclick="he()">Click to add</button>
+    <p id="ha"></p>
+    <br>
+    <h4>Division</h4>
+    <input type="number" id="divi" value="">
+    <input type="number" id="duvu" value="">
+    <button id="Division" onclick="har()">Click to add</button>
+    <p id="hesr"></p>
+<script>
+    document.getElementById("varOne").focus()
+function doub(){
+    document.getElementById("hi").innerHTML = Number (varOne.value) + Number (varTwo.value)
+}
+function dob() {
+    document.getElementById("ho").innerHTML = Number (dos.value) - Number (des.value)
+}
+function he(){
+    document.getElementById("ha").innerHTML = Number (dis.value) * Number (dus.value)
+}
+function har(){
+    document.getElementById("hesr").innerHTML = Number (divi.value) / Number (duvu.value)
+}
+</script>
+</body>
+</html>

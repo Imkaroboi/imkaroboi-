@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator 3.0</title>
+</head>
+<body>
+    <h1>Calculator 3.0</h1>
+    <input type="number" id="math">
+    <button id="calculate" onclick="calc()">Calculate</button>
+    <form action="list.php" method="POST">
+        <select name="list" id="list">
+            <option id="addition" value="+">Addition</option>
+            <option id="subtraction" value="-">Subtraction</option>
+            <option id="multiplication" value="*">Multiplication</option>
+            <option id="division" value="/">Division</option>
+    <br>
+    <input type="number" id="math1">
+<p id="answer"></p>
+    <script>
+        document.getElementById("math").focus()
+        function calc() {
+            if (document.getElementById("list").value == "+") {
+                document.getElementById("answer").innerHTML = Number (math.value) + Number (math1.value)
+            }
+            if (document.getElementById("list").value == "-") {
+                document.getElementById("answer").innerHTML = Number (math.value) - Number (math1.value)
+            }
+            if (document.getElementById("list").value == "*") {
+                document.getElementById("answer").innerHTML = Number (math.value) * Number (math1.value)
+            }
+            if (document.getElementById("list").value == "/") {
+                document.getElementById("answer").innerHTML = Number (math.value) / Number (math1.value)
+            }
+        }
+        
+    </script>
+</body>
+</html>
